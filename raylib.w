@@ -112,8 +112,5 @@ const i32 MOUSE_LEFT_BUTTON = 0;
 const i32 MOUSE_RIGHT_BUTTON = 1;
 const i32 MOUSE_MIDDLE_BUTTON = 2;
 
-const i8 false = 0;
-const i8 true = 1;
-
 mut i32 HEIGHT = 600;
 mut i32 WIDTH = 800;

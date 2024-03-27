@@ -1,5 +1,6 @@
 import "raylib.w";
 
+
 InitWindow(800, 450, "raylib [core] example - basic window");
 
 SetTargetFPS(60);
@@ -7,10 +8,10 @@ SetTargetFPS(60);
 mut i32 x = 0;
 mut i32 y = 0;
 
-for (mut auto i = 0; i < 100000; i = i + 1) {
+while(true) {
+  
   if (WindowShouldClose()) {
-    CloseWindow();
-    exit(0);
+    break;
   }
   
   BeginDrawing();
@@ -34,4 +35,5 @@ for (mut auto i = 0; i < 100000; i = i + 1) {
   EndDrawing();
 }
 
+CloseWindow();
 exit(0);
