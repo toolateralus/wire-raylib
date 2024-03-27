@@ -61,7 +61,59 @@ const i32 purple = 8388736;
 const i32 teal = 32896;
 const i32 navy = 128;
 
+const i32 KEY_A = 65;
+const i32 KEY_B = 66;
+const i32 KEY_C = 67;
+const i32 KEY_D = 68;
+const i32 KEY_E = 69;
+const i32 KEY_F = 70;
+const i32 KEY_G = 71;
+const i32 KEY_H = 72;
+const i32 KEY_I = 73;
+const i32 KEY_J = 74;
+const i32 KEY_K = 75;
+const i32 KEY_L = 76;
+const i32 KEY_M = 77;
+const i32 KEY_N = 78;
+const i32 KEY_O = 79;
+const i32 KEY_P = 80;
+const i32 KEY_Q = 81;
+const i32 KEY_R = 82;
+const i32 KEY_S = 83;
+const i32 KEY_T = 84;
+const i32 KEY_U = 85;
+const i32 KEY_V = 86;
+const i32 KEY_W = 87;
+const i32 KEY_X = 88;
+const i32 KEY_Y = 89;
+const i32 KEY_Z = 90;
+
+const i32 KEY_ZERO = 48;
+const i32 KEY_ONE = 49;
+const i32 KEY_TWO = 50;
+const i32 KEY_THREE = 51;
+const i32 KEY_FOUR = 52;
+const i32 KEY_FIVE = 53;
+const i32 KEY_SIX = 54;
+const i32 KEY_SEVEN = 55;
+const i32 KEY_EIGHT = 56;
+const i32 KEY_NINE = 57;
+
+const i32 KEY_UP = 265;
+const i32 KEY_DOWN = 264;
+const i32 KEY_LEFT = 263;
+const i32 KEY_RIGHT = 262;
+
+const i32 KEY_SPACE = 32;
+const i32 KEY_ENTER = 257;
+const i32 KEY_ESCAPE = 256;
+
+const i32 MOUSE_LEFT_BUTTON = 0;
+const i32 MOUSE_RIGHT_BUTTON = 1;
+const i32 MOUSE_MIDDLE_BUTTON = 2;
+
 const i8 false = 0;
 const i8 true = 1;
-const i32 HEIGHT = 600;
-const i32 WIDTH = 800;
+
+mut i32 HEIGHT = 600;
+mut i32 WIDTH = 800;
