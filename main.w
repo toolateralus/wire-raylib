@@ -37,21 +37,21 @@ while (true) {
   }
   
   BeginDrawing();
-  ClearBackground(black);
+  ClearBackground(Color::BLACK);
   DrawFPS(0,0);
   
   auto scale = Rectangle();
   
-  if (IsKeyDown(KEY_D)) {
+  if (IsKeyDown(Key::D)) {
     x = x + speed;
   }
-  if (IsKeyDown(KEY_A)) {
+  if (IsKeyDown(Key::A)) {
     x = x - speed;
   }
-  if (IsKeyDown(KEY_W)) {
+  if (IsKeyDown(Key::W)) {
     y = y - speed;
   }
-  if (IsKeyDown(KEY_S)) {
+  if (IsKeyDown(Key::S)) {
     y = y + speed;
   }
   if (y < HEIGHT - scale.h) {
@@ -61,9 +61,9 @@ while (true) {
   x = clamp(x, 0, WIDTH - scale.w);
   y = clamp(y, 0, HEIGHT - scale.h);
   
-
-  DrawRectangle(x, y, scale.w, scale.h, white);
-  DrawText("This is running on :wire: lang.", 100, 0, 20, white);
+  
+  DrawRectangle(x, y, scale.w, scale.h, Color::WHITE);
+  DrawText("This is running on :wire: lang.", 100, 0, 20, Color::WHITE);
   EndDrawing();
 }
 
