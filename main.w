@@ -29,12 +29,7 @@ i32 clamp(i32 v, i32 min, i32 max) {
   return v;
 }
 
-while (true) {
-  
-  if (WindowShouldClose()) { 
-    printf("exiting");
-    break; 
-  }
+while (!WindowShouldClose()) {
   
   BeginDrawing();
   ClearBackground(Color::BLACK);
@@ -58,8 +53,8 @@ while (true) {
     y = y + 1;
   } 
   
-  x = clamp(x, 0, WIDTH - scale.w);
-  y = clamp(y, 0, HEIGHT - scale.h);
+  // x = clamp(x, 0, WIDTH - scale.w);
+  // y = clamp(y, 0, HEIGHT - scale.h);
   
   
   DrawRectangle(x, y, scale.w, scale.h, Color::WHITE);
